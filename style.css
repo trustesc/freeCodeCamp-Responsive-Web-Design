@@ -1,0 +1,565 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Small up to 640px 20" to 65" TVs 320x569, 360x640, 480x854 */
+
+@media only screen and (max-width: 640px) {
+
+    img {
+        max-width: 20%;
+    }
+
+    body {
+        background-color: #1F1E20;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 10%;
+        background-color: #BE3144;
+        text-align: end;
+    }
+
+    .navbar-link {
+        color: #F0F0F0;
+        font-family: sans-serif;
+        text-decoration: none;
+
+        padding: 3%;
+        display: inline-block;
+    }
+
+    :target header {
+        /* color: #3295C3; */
+        background-image: linear-gradient(to right, red, yellow);
+        animation: headeranimation 3s ease-in-out infinite;
+    }
+
+    a:hover {
+        font-weight: bolder;
+    }
+
+    #welcome-section {
+        margin-top: 10%;
+        font-family: sans-serif;
+        text-align: center;
+        color: #F0F0F0;
+        background-color: #1F1F21;
+    }
+
+    #personal-description {
+        margin-bottom: 5%;
+        font-style: italic;
+    }
+
+    #question {
+        margin: 2% 0% 2% 0%;
+        font-style: italic;
+    }
+
+    #main-section {
+        background-color: #45567D;
+        font-family: sans-serif;
+        text-align: center;
+        color: #F0F0F0;
+    }
+
+    .section-title {
+        font-size: x-large;
+    }
+
+    .project-tile {
+        font-family: sans-serif;
+        text-align: center;
+        margin: 1%;
+        width: 150px;
+        background-color: #303841;
+        border-radius: 15%;
+    }
+
+    #disclaimer {
+        font-family: sans-serif;
+        display: block;
+        text-align: justify;
+        font-size: x-small;
+        padding: 1%;
+        display: inline-block;
+        background-color: #303841;
+    }
+
+    #disclaimer>a {
+        text-decoration: none;
+        color: #F0F0F0;
+    }
+
+    .project-image {
+        min-width: 100%;
+        border-radius: 15% 15% 0% 0%;
+    }
+
+    .project-link {
+        text-decoration: none;
+        color: #F0F0F0;
+        margin-top: 1%;
+    }
+
+    #projects {
+        font-size: x-small;
+        display: flex;
+    }
+
+    footer {
+        background-color: #303841;
+        font-family: sans-serif;
+        color: #F0F0F0;
+        text-align: center;
+    }
+
+    /* Style all font awesome icons */
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15%;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+
+    /* Codepen */
+    .fa-codepen {
+        background: #627AAC;
+        color: white;
+    }
+
+    /* Envelope */
+    .fa-envelope {
+        background: #76BCF1;
+        color: white;
+    }
+
+    /* Github */
+    .fa-github {
+        background: #3295C3;
+        color: white;
+    }
+
+    /* Imgbb */
+    .fa-picture-o {
+        background: #55ACEE;
+        color: white;
+    }
+
+    @keyframes headeranimation {
+
+        25% {
+            color: yellow;
+        }
+
+        50% {
+            color: #3295C3;
+        }
+
+        75% {
+            color: yellow;
+        }
+
+    }
+
+    #divider {
+        margin: 1% 0% 0% 0%;
+        background-color: #BE3144;
+        width: 100%;
+        height: 1px;
+    }
+
+}
+
+/* Medium 641 - 1007px 7" to 12" Tablets 960x540 */
+
+@media only screen and (min-width:641px) and (max-width: 1007px) {
+
+    img {
+        max-width: 20%;
+    }
+
+    body {
+        background-color: #1F1E20;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 10%;
+        background-color: #BE3144;
+        text-align: end;
+    }
+
+    .navbar-link {
+        color: #F0F0F0;
+        font-family: sans-serif;
+        text-decoration: none;
+
+        padding: 2%;
+        display: inline-block;
+    }
+
+    :target header {
+        /* color: #3295C3; */
+        background-image: linear-gradient(to right, red, yellow);
+        animation: headeranimation 3s ease-in-out infinite;
+    }
+
+    /* h1 {
+        margin-top: -1%;
+    } */
+
+    a:hover {
+        font-weight: bolder;
+    }
+
+    #welcome-section {
+        margin-top: 10%;
+        font-family: sans-serif;
+        text-align: center;
+        color: #F0F0F0;
+        background-color: #1F1F21;
+    }
+
+    #personal-description {
+        margin-bottom: 5%;
+        font-style: italic;
+    }
+
+    #question {
+        margin: 2% 0% 2% 0%;
+        font-style: italic;
+    }
+
+    #main-section {
+        background-color: #45567D;
+        font-family: sans-serif;
+        text-align: center;
+        color: #F0F0F0;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: x-large;
+    }
+
+    .project-tile {
+        font-family: sans-serif;
+        text-align: center;
+        font-size: smaller;
+        margin: 1%;
+        width: 250px;
+        height: 130px;
+        background-color: #303841;
+        border-radius: 15%;
+    }
+
+    #disclaimer {
+        font-family: sans-serif;
+        display: block;
+        text-align: justify;
+        font-size: small;
+        padding: 1%;
+        display: inline-block;
+        background-color: #303841;
+    }
+
+    #disclaimer>a {
+        text-decoration: none;
+        color: #F0F0F0;
+    }
+
+    .project-image {
+        min-width: 100%;
+        border-radius: 15% 15% 0% 0%;
+    }
+
+    .project-link {
+        text-decoration: none;
+        color: #F0F0F0;
+        margin-top: 1%;
+    }
+
+    #projects {
+        display: flex;
+    }
+
+    footer {
+        background-color: #303841;
+        font-family: sans-serif;
+        color: #F0F0F0;
+        text-align: center;
+    }
+
+    /* Style all font awesome icons */
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15%;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+
+    /* Codepen */
+    .fa-codepen {
+        background: #627AAC;
+        color: white;
+    }
+
+    /* Envelope */
+    .fa-envelope {
+        background: #76BCF1;
+        color: white;
+    }
+
+    /* Github */
+    .fa-github {
+        background: #3295C3;
+        color: white;
+    }
+
+    /* Imgbb */
+    .fa-picture-o {
+        background: #55ACEE;
+        color: white;
+    }
+
+    @keyframes headeranimation {
+
+        25% {
+            color: yellow;
+        }
+
+        50% {
+            color: #3295C3;
+        }
+
+        75% {
+            color: yellow;
+        }
+
+    }
+
+    #divider {
+        margin: 1% 0% 0% 0%;
+        background-color: #BE3144;
+        width: 100%;
+        height: 1px;
+    }
+
+}
+
+/* Large 1008px and up 13" and up PCs, Laptops, Surface Hub 1024x640, 1366x768, 1920x1080 */
+
+@media only screen and (min-width: 1008px) {
+
+    img {
+        max-width: 20%;
+    }
+
+    body {
+        background-color: #1F1E20;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 10%;
+        background-color: #BE3144;
+        text-align: end;
+    }
+
+    .navbar-link {
+        color: #F0F0F0;
+        font-family: sans-serif;
+        text-decoration: none;
+
+        padding: 2%;
+        display: inline-block;
+    }
+
+    :target header {
+        /* color: #3295C3; */
+        background-image: linear-gradient(to right, red, yellow);
+        animation: headeranimation 3s ease-in-out infinite;
+    }
+
+    h1 {
+        margin-top: -2%;
+    }
+
+    a:hover {
+        font-weight: bolder;
+    }
+
+    #welcome-section {
+        margin-top: 10%;
+        font-family: sans-serif;
+        text-align: center;
+        color: #F0F0F0;
+        background-color: #1F1F21;
+    }
+
+    #personal-description {
+        margin-bottom: 5%;
+        font-style: italic;
+    }
+
+    #question {
+        margin: 2% 0% 2% 0%;
+        font-style: italic;
+    }
+
+    #main-section {
+        background-color: #45567D;
+        font-family: sans-serif;
+        text-align: center;
+        color: #F0F0F0;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: x-large;
+    }
+
+    .project-tile {
+        font-family: sans-serif;
+        text-align: center;
+        margin: 1%;
+        width: 250px;
+        height: 150px;
+        background-color: #303841;
+        border-radius: 15%;
+    }
+
+    #disclaimer {
+        font-family: sans-serif;
+        display: block;
+        text-align: justify;
+        font-size: small;
+        padding: 1%;
+        display: inline-block;
+        background-color: #303841;
+    }
+
+    #disclaimer>a {
+        text-decoration: none;
+        color: #F0F0F0;
+    }
+
+    .project-image {
+        min-width: 100%;
+        border-radius: 15% 15% 0% 0%;
+    }
+
+    .project-link {
+        text-decoration: none;
+        color: #F0F0F0;
+        margin-top: 1%;
+    }
+
+    #projects {
+        display: flex;
+    }
+
+    footer {
+        background-color: #303841;
+        font-family: sans-serif;
+        color: #F0F0F0;
+        text-align: center;
+    }
+
+    /* Style all font awesome icons */
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15%;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+
+    /* Codepen */
+    .fa-codepen {
+        background: #627AAC;
+        color: white;
+    }
+
+    /* Envelope */
+    .fa-envelope {
+        background: #76BCF1;
+        color: white;
+    }
+
+    /* Github */
+    .fa-github {
+        background: #3295C3;
+        color: white;
+    }
+
+    /* Imgbb */
+    .fa-picture-o {
+        background: #55ACEE;
+        color: white;
+    }
+
+    @keyframes headeranimation {
+
+        25% {
+            color: yellow;
+        }
+
+        50% {
+            color: #3295C3;
+        }
+
+        75% {
+            color: yellow;
+        }
+
+    }
+
+    #divider {
+        margin: 1% 0% 0% 0%;
+        background-color: #BE3144;
+        width: 100%;
+        height: 1px;
+    }
+
+}
